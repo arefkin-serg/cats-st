@@ -1,0 +1,50 @@
+.special-button {
+  display: block;
+  perspective: 500px;  
+  user-select: none;
+  height: 39px;
+  padding: 10px 18px 5px;
+  border: 2px solid $color-dark;
+  border-right: 0;
+  border-radius: 2px;
+  background-color: $color-white;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  color: $color-black;
+  letter-spacing: .07em;
+  transition: background-color $transition-default, color $transition-default;
+
+  &:hover {
+    background-color: $color-black;
+    border-color: $color-black;
+    color: $color-white;
+  }
+
+  &__text {
+
+  }
+
+  &__decor {
+    position: absolute;
+    top: -2px;
+    right: -16px;
+    display: block;
+    width: 17px;
+    height: 39px;
+  }
+
+  &__decor-background {
+    fill: $color-white;
+    transition: fill $transition-default;
+
+    .special-button:hover & {
+      fill: $color-black;
+    }
+  }
+
+  &__decor-border {
+    fill: $color-dark;
+    transition: fill $transition-default;
+  }
+}

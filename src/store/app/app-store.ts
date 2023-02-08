@@ -3,7 +3,6 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { CartItem } from '../../shared/models/cartItem';
 import { CouponDetails } from '../../shared/models/couponDetails';
 import { initialCartState } from '../../shared/dummy-data/initialCartState';
-import { initialCoupons } from '../../shared/dummy-data/initialCoupons';
 
 type AppState = {
   isCartPanelOpened: boolean;
@@ -15,7 +14,7 @@ type AppState = {
 const initialState: AppState = {
   isCartPanelOpened: false,
   cart: initialCartState,
-  coupons: initialCoupons,
+  coupons: [],
   shippingCost: 1000,
 };
 

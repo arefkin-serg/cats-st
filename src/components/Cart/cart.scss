@@ -38,4 +38,13 @@
       margin-right: 8px;
     }
   }
+
+  &__nothing {
+    max-width: 210px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin: 32px auto 40px;
+  }
 }

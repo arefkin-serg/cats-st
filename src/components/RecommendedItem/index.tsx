@@ -4,6 +4,7 @@ import classNames from 'classnames';
 
 import Panel from '../Panel';
 import Picture from '../Picture';
+import SpecialButton from '../SpecialButton';
 
 // TODO Move Hardcoded data to the props
 const RecommendedItem = ({ isOnCartPanel = false, className }: Props) => {
@@ -23,9 +24,7 @@ const RecommendedItem = ({ isOnCartPanel = false, className }: Props) => {
               <p className="recommended-item__price">$122.55</p>
               <p className="recommended-item__price recommended-item__price--old">$129.00</p>
             </div>
-            <button className="button button--secondary" type="button">
-              Add now
-            </button>
+            <SpecialButton>Add now</SpecialButton>
           </div>
         </div>
       </>
