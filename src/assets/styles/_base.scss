@@ -1,0 +1,33 @@
+@use "vars";
+
+:root {
+  --scrollbar-width: 17px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 360px;
+  font-family: $font-primary;
+  color: $color-black;
+
+  &.scroll-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}

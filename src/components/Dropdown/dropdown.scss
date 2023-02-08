@@ -1,0 +1,94 @@
+.dropdown {
+  position: relative;
+
+  &__input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #9C9C9C;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color $transition-default;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 11px;
+      background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.21777 1.10825L6.95287 8.996C7.23635 9.38589 7.85784 9.38589 8.14132 8.996L13.8873 1.10825' stroke='%23231F20' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+      content: "";
+      transition: transform $transition-default;
+    }
+
+    .dropdown--list-visible & {
+      background-color: $color-white;
+      border-radius: 2px 2px 0 0;
+
+      &::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    .dropdown--phone & {
+      padding: 3px 0 0 9px;
+      border-bottom-width: 0;
+    }
+  }
+
+  &__field {
+    display: block;
+    width: 100%;
+    padding: 5px 5px 3px 5px;
+    border: none;
+    background-color: $color-transparent;
+    font-size: 25px;
+    line-height: 1;
+    pointer-events: none;
+    transition: color $transition-default;
+
+    .dropdown--list-visible & {
+      color: $color-black;
+    }
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-1px);
+    width: 100%;
+    padding-top: 5px;
+    background-color: $color-white;
+    border: 1px solid #9C9C9C;
+    border-radius: 0 0 2px 2px;
+
+    .dropdown--list-visible & {
+      display: block;
+    }
+  }
+
+  &__list-elem {
+    padding: 5px;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+
+    .dropdown--phone & {
+      padding: 5px 9px;
+    }
+  }
+
+  &__flag {
+    margin-right: 6px;
+    transform: translateY(2px);
+
+    .dropdown__list-elem & {
+      margin-right: 10px;
+      transform: none;
+    }
+  }
+}

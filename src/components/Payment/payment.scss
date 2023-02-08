@@ -1,0 +1,14 @@
+.payment {
+  border: 1px solid $color-black;
+  border-radius: 3px;
+  background-color: #F8F8F8;
+
+  &__method {
+    height: 50px;
+    padding: 2px 5px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-black;
+    }
+  }
+}

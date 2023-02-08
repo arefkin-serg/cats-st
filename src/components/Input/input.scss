@@ -1,0 +1,16 @@
+.input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 4px 5px 0;
+  font-size: 25px;
+  line-height: 34px;
+  color: #424141;
+  background-color: $color-transparent;
+  transition: background-color $transition-default;
+
+  &:focus {
+    background-color: $color-white;
+    outline: none;
+  }
+}

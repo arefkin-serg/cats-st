@@ -1,0 +1,33 @@
+.group {
+  margin-bottom: 67px;
+
+  &--no-mb {
+    margin-bottom: 0;
+  }
+
+  &--delivery {
+    margin-bottom: 33px;
+  }
+
+  &__title-box {
+    position: relative;
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 40px;
+      line-height: 60px;
+    }
+
+    .group--payment & {
+      margin-bottom: 6px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.cart-total {
+  padding: 0 5px;
+
+  &--index {
+    padding: 0 9px;
+    margin-bottom: 20px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__key {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+
+  &__value {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 350;
+  }
+
+  &__cost {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    .cart-total--index & {
+      margin-top: 18px;
+    }
+  }
+
+  &__cost-value {
+  }
+
+  &__currency {
+    margin-right: 18px;
+    font-weight: 400;
+    color: #939393;
+  }
+}

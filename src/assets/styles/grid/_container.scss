@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  max-width: 1306px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+
+  &--wide {
+    max-width: 1604px;
+  }
+}

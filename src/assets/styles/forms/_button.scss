@@ -1,0 +1,111 @@
+.button {
+  display: block;
+  perspective: 500px;
+  padding: 7px 15px 3px;
+  border: 1px solid #A0A0A0;
+  border-radius: 4px;
+  background-color: #F1EEE9;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-black;
+  transition: background-color $transition-default, border-color $transition-default, color $transition-default;
+  user-select: none;
+
+  &:hover {
+    background-color: darken(#A0A0A0, 20%);
+    border-color: darken(#A0A0A0, 20%);
+    color: $color-white;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &--primary {
+    position: relative;
+    display: block;
+    padding: 12px 30px 6px;
+    background-color: $color-black;
+    border: 2px solid $color-dark;
+    border-radius: 3px;
+    box-shadow: 0 4px 10px rgba($color-black, .25);
+    font-size: 30px;
+    line-height: 45px;
+    color: $color-white;
+    text-transform: none;
+    transition: background-color $transition-default, color $transition-default;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%) translateX(2px) rotateY(31deg) rotateZ(45deg);
+      height: 47px;
+      width: 48px;
+      background-color: inherit;
+      border-radius: 3px;
+      content: "";
+    }
+
+    &.button--index {
+      padding: 6px 30px 2px;
+
+      &::after {
+        transform: translate(50%, -50%) translateX(1px) rotateY(31deg) rotateZ(45deg);
+        height: 39px;
+        width: 39px;
+      }
+    }
+
+    &:hover {
+      color: $color-contrast;
+      background-color: $color-black;
+      border-color: $color-dark;
+    }
+  }
+
+  &--secondary {
+    padding: 10px 18px 5px;
+    border: 2px solid $color-black;
+    border-radius: 2px;
+    background-color: $color-white;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    color: $color-black;
+    text-transform: none;
+    letter-spacing: .07em;
+    transition: background-color $transition-default, color $transition-default;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      height: 27px;
+      width: 27px;
+      background-color: inherit;
+      border-radius: 3px;
+      box-shadow: inherit;
+      content: "";
+    }
+
+    &::before {
+      background-color: $color-black;
+      transform: translate(50%, -50%) translate(2px, 0) rotateY(31deg) rotateZ(45deg);
+    }
+
+    &::after {
+      right: 2px;
+      background-color: inherit;
+      transform: translate(50%, -50%) translate(1.5px, 0) rotateY(31deg) rotateZ(45deg);
+    }
+
+    &:hover {
+      background-color: $color-black;
+      border-color: $color-black;
+      color: $color-white;
+    }
+  }
+}

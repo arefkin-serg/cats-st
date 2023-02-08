@@ -1,0 +1,21 @@
+.phone-input {
+  position: relative;
+  z-index: 0;
+
+  &__box {
+    display: flex;
+  }
+
+  &__country-dropdown {
+    flex-shrink: 0;
+    width: 131px;
+    margin-bottom: -1px;
+  }
+
+  &__field {
+    text-align: center;
+  }
+
+  &__label {
+  }
+}

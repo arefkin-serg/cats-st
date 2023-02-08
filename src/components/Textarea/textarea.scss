@@ -1,0 +1,30 @@
+.textarea {
+  &__field {
+    display: block;
+    width: 100%;
+    padding: 3px 5px;
+    border: none;
+    background-color: $color-transparent;
+    font-size: 25px;
+    line-height: 38px;
+    color: #424141;
+    resize: none;
+    transition: background-color $transition-default;
+
+    &:focus {
+      outline: none;
+      background-color: $color-white;
+    }
+  }
+
+  &__label-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+  }
+
+  &__action-change {
+  }
+}

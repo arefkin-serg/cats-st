@@ -1,0 +1,54 @@
+.header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  @media (min-width: $breakpoint-md) {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  &__content {
+    position: relative;
+    padding: 0 80px;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 0 181px;
+    }
+  }
+
+  &__logo-link {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 100%;
+    max-width: 80px;
+
+    @media (min-width: $breakpoint-md) {
+      max-width: 181px;
+    }
+  }
+
+  &__logo-img {
+    display: block;
+    width: 100%;
+  }
+
+  &__page-title {
+    font-size: 32px;
+    line-height: 32px;
+    font-family: $font-secondary;
+    font-weight: 300;
+    text-align: center;
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 45px;
+      line-height: 58px;}
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 60px;
+      line-height: 72px;
+    }
+  }
+}

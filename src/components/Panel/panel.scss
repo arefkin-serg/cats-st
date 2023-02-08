@@ -1,0 +1,15 @@
+.panel {
+  padding: 14px 14px 30px;
+  border: 1px solid #9E9E9E;
+  border-radius: 9px;
+  background-color: $color-white;
+
+  &--yellow {
+    background-color: #FFFBEC;
+  }
+
+  &--index {
+    margin-bottom: 60px;
+    padding: 14px 8px;
+  }
+}
