@@ -77,6 +77,11 @@
     font-size: 25px;
     line-height: 1;
     cursor: pointer;
+    transition: background-color $transition-default;
+
+    &:hover, &:focus {
+      background-color: lighten(#f1eee9, 3%)
+    }
 
     .dropdown--phone & {
       padding: 5px 9px;
